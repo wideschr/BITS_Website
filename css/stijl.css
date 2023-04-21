@@ -1,0 +1,181 @@
+/*
+KLEUREN: 
+grijs : #aaaaaa   ->kleur van navigatielinks
+rood  : #f0141e
+
+wit   : #ffffff ->kleur van navigatielink met muisover
+zwart : #000000
+
+
+/* TYPOGRAFIE
+lettertype : Arial
+basisgrootte: 15 pixels
+*/
+
+/* BASIS CSS HIER (body, paragrafen, titels, ...) */
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img{
+  display: block;
+  min-width:100%;
+  max-width: 100%;
+  height: auto;
+}
+
+h1{
+  color: #f0141e;
+  text-align: center;
+  font-weight: 900;
+  padding: 2rem;
+}
+
+
+/* HEADER & NAVIGATIE */
+header{
+  background-color: #000000;
+  padding: 0rem 1rem 1rem 1rem
+}
+
+nav{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+nav>a{
+  margin-bottom: 3rem;
+}
+
+ul{
+  list-style: none;
+  display: flex;
+}
+
+nav ul a{
+  text-decoration: none;
+  color:#aaaaaa;
+  text-transform: uppercase;
+  padding: 1rem;
+
+}
+
+ nav ul a:hover{
+  background-color: #f0141e;
+  color: #FFFFFF;
+}
+
+.active{
+  color: #f0141e;
+}
+
+
+/* INHOUD: FILMS */
+.movie-block{
+  display: block;
+  text-decoration: none ;
+  color: #000000;
+}
+
+.movie-block:hover .movie-content{
+  background-color: #f0141e;
+  transition: background-color 0.5s;
+
+}
+
+.movie-block:hover img{
+  opacity:0.5;
+}
+
+.first{
+  border: 10px solid #f0141e;
+}
+
+.movie-title{
+  padding: 1rem 2rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.movie-text{
+  padding: 1rem 2rem;
+}
+
+/* in filmpje was dit underlined, in screenshot niet*/
+.movie-readmore{
+  padding: 0 2rem 1rem;
+  font-weight: 900;
+  text-decoration: underline;
+}
+
+
+footer{
+  background-color: #000000;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* ################################## */
+/* Mediaquery voor schermen vanaf 1024 pixels*/
+/* ################################## */
+@media screen and (min-width:1025px) {
+  header{
+    padding: 0;
+    display: flex;
+    align-content: center;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+  }
+  
+  nav{
+  
+  flex-direction: row;
+  align-content: center;
+}
+
+nav>a{
+  margin-bottom: 0;
+}
+  
+ul{
+  padding-left: 2rem;;
+}
+
+nav ul a{
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  padding: 2rem;
+  height: 100%
+
+}
+
+.row{
+  display: flex;
+}
+
+.twee a{
+  width: 50%;
+}
+
+.drie a{
+  width: 33%;
+}
+
+.hidden{
+  display: none;
+}
+
+}
+
+
