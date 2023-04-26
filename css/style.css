@@ -125,7 +125,7 @@ nav{
     height: 100vh;
     width: 100%;
     overflow: hidden;
-    background-image: url(/img/intro_film.mp4);
+    background-image: url(../img/intro_film.mp4);
     background-repeat: no-repeat;
     background-size:cover;
     background-attachment: fixed;
@@ -334,12 +334,13 @@ section{
 
     /* HULP VANOP AFSTAND */
     .section_spacer_hulp{
-        background-image: url(/img/background_remoteSupport.jpg);
+        background-image: url(../img/background_remoteSupport.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
         background-position: bottom;
         height: 40vh;
+        z-index: 3;
     }
 
     .hulp_cont{
@@ -390,11 +391,11 @@ section{
 
     /* REFERENTIES */
     .section_spacer_referenties{
-        background-image: url(/img/background_references.jpg);
+        background-image: url(../img/background_references.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
-        background-position: bottom;
+        background-position:bottom;
         height: 40vh;
     }
 
