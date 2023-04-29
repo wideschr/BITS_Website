@@ -93,5 +93,3 @@ console.clear();
         b_beheer.classList.remove('button_actief')
         b_troubleshooting.classList.add('button_actief')
     })
-
-
