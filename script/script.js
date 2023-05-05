@@ -93,3 +93,36 @@ console.clear();
         b_beheer.classList.remove('button_actief')
         b_troubleshooting.classList.add('button_actief')
     })
+
+
+    // document.getElementById("verstuur").addEventListener("click", function(event){
+    //     event.preventDefault(); // om te voorkomen dat het formulier automatisch wordt verzonden
+    
+    //     // verzamel de gegevens van het formulier
+    //     let naam = document.getElementById("naam").value;
+    //     let tel = document.getElementById("tel").value;
+    //     let email = document.getElementById("email").value;
+    //     let boodschap = document.getElementById("boodschap").value;
+    
+    //     // maak een nieuw XMLHttpRequest-object
+    //     let xhr = new XMLHttpRequest();
+    
+    //     // stel de methode en de url in
+    //     xhr.open("POST", "send_email.php");
+    
+    //     // stel de inhoudstype header in
+    //     xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+
+    //     // stel de onload-functie in
+    //     xhr.onload = function() {
+    //         if (xhr.status === 200) {
+    //             // de server heeft de aanvraag met succes verwerkt
+    //             console.log(xhr.responseText);
+    //         }else{
+    //             console.log("error")
+    //         }
+    //     };
+    
+    //     // stuur de gegevens van het formulier naar de server
+    //     xhr.send("naam=" + naam + "&tel=" + tel + "&email=" + email + "&boodschap=" + boodschap);
+    // });
