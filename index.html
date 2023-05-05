@@ -274,7 +274,7 @@
                 </div>
                 
                 <div>
-                    <form method="post" action="/php/send_email.php">
+                    <form method="post" action="send_email.php">
                         <p class="form_instr">Vul dit formulier in en wij contacteren u zo snel mogelijk</p>
     
                         <input class="form_elem" type="text" name="naam" id="naam" placeholder="Naam" required>
@@ -285,8 +285,11 @@
     
                         <textarea class="form_elem" name="boodschap" id="boodschap"  rows="10" placeholder="Boodschap" required></textarea>
                     
-                        <input class="form_button" type="button" value="Verstuur" id="verstuur">
+                        <input formaction="send_email.php" class="form_button" type="submit" value="Verstuur" id="verstuur">
                     </form>
+
+                    <!-- <iframe width="640px" height="fit-content" src="https://forms.office.com/Pages/ResponsePage.aspx?id=qHxbaagtRUWi2kLQN4TlhSYkoFf_uVVMqilBhyMvy2lUMkpONDZXWkJLVkpOMk4zTjBXN0pKMFBMTi4u&embed=true" frameborder="0" marginwidth="0" marginheight="0" style="border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe> -->
+
                     <div class="google_maps">
     
                     </div>
