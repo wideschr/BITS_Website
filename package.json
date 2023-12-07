@@ -1,0 +1,19 @@
+{
+  "name": "bits_website",
+  "version": "1.0.0",
+  "description": "De website van Better IT Support",
+  "main": "server/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server/server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "nodemailer": "^6.9.7",
+    "nodemon": "^3.0.2"
+  }
+}
