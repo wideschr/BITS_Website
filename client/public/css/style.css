@@ -508,7 +508,7 @@ section{
     .contact_cont{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 2rem;;
+        gap: 1rem;;
         width: 75%;
         margin-bottom: 2rem;
         
@@ -523,7 +523,7 @@ section{
 
     .contact_details a, .contact_details p, .contact_details address{
         text-decoration: none;
-        color: #FEB219;
+        color: #101F3D;
      
     }
 
@@ -624,7 +624,7 @@ footer p{
 
 
 
-/* Hide the hamburger menu by default */
+/* HAMBURGER MENU STUFF */
 .hamburger {
     display: none;
     cursor: pointer;
@@ -801,15 +801,4 @@ footer p{
         grid-template-columns: repeat(2,1fr);
     }
 
-  }
-
-  @media (min-width: 1100px) {
-    /* Hide the regular menu and show the hamburger menu on smaller screens */
-    .menu {
-      display: flex;
-    }
-  
-    .hamburger {
-      display: none;
-    }
   }

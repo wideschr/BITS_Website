@@ -45,7 +45,7 @@ window.onload = function() {
         var hamburger = document.querySelector('.hamburger');
         var closeMenu = document.querySelector('.close-menu');
         var hamburgerMenu = document.querySelector('.hamburger-menu');
-
+        
         hamburger.addEventListener('click', function () {
             hamburgerMenu.style.display = 'block';
             hamburger.style.display = 'none';
