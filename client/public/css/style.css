@@ -815,3 +815,13 @@ footer p{
     }
 
   }
+
+  @media (min-width: 1100px) {
+    .hamburger {
+      display: none;
+    }
+
+    .hamburger-menu{
+        display: none;
+    }
+  }
