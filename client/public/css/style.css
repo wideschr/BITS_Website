@@ -539,6 +539,10 @@ section{
         margin-right: 1rem;
     }
 
+    .contact_details_method a{
+        text-decoration: underline;
+    }
+
     .contact_cont form{
         display: flex;
         flex-direction: column;
@@ -808,7 +812,7 @@ footer a{
     }
 
     .klanten_grid{
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(1,1fr);
     }
 
     .contact_cont{
