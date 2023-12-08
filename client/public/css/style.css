@@ -667,22 +667,21 @@ footer p{
     z-index: 5;
 }
 
-.hamburger-menu{
+.hamburger-menu {
+    display: flex;
     position: fixed;
     top: 0;
     left: 0;
-    display:none;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between; /* Distribute space between items */
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     background-color: rgba(16, 31, 60, 0.6); /* Use rgba for transparent background */
     backdrop-filter: blur(10px); /* Apply blur */
     color: #FFFFFF;
     padding: 2rem;
     z-index: 2;
-    
-   
 }
  
 .hamburger-menu li {
@@ -707,11 +706,16 @@ footer p{
     font-weight: 600;
 }
 
-.burger-hulp-btn{
+.burger-hulp-btn {
+    flex-grow: 1;
+    margin-top: auto; /* Push the button to the bottom */
     border: 1px solid #FFFFFF;
-    padding: 0.5rem 1.5rem ;
+    padding: 0.5rem 1.5rem;
     border-radius: 1rem;
+    margin-top: auto; /* Push the button to the bottom */
 }
+
+
 
 
 
