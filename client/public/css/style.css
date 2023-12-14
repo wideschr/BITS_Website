@@ -309,6 +309,7 @@ section{
         text-transform: uppercase;
         padding: 0.5rem 0 0.5rem 0;
         margin: 0.7rem;;
+        color: #101F3D;
         border: none;
         background-color: #FFFFFF;
         border-bottom: 3px solid #EFEFEF;
@@ -739,11 +740,12 @@ footer a{
         align-items: center;
         background-color: #FFFFFF;
         padding: 0rem 5%;
+ 
     }
-
 
     .intro_titel{
         text-align: center;
+        z-index: 2;
     }
     
     .intro_firstpage{
@@ -821,6 +823,11 @@ footer a{
 
     .contact_details{
         grid-template-columns: repeat(2,1fr);
+    }
+
+    .contact_cont form{
+        background-color: white;
+        padding: 3rem 0.5rem;
     }
 
   }
