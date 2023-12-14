@@ -35,7 +35,7 @@ app.listen(PORT, () => {
     });
 
     //endpoint for form submission
-    app.post('/form-submission', (req, res) => {
+    app.post(__dirname + '/form-submission', (req, res) => {
         console.log('Form data in res.body');
 
         //validate the data
