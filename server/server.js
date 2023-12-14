@@ -4,7 +4,7 @@ require('dotenv').config(); // use .env file to hide sensitive information
 const express = require('express');
 const app = express();
 const nodemailer = require('nodemailer');
-
+const bodyParser = require('body-parser');
 
 //constants
 const PORT = process.env.PORT;
@@ -12,6 +12,7 @@ const PORT = process.env.PORT;
 //middleware
 app.use(express.urlencoded({ extended: true })); 
 app.use(express.static('client/public'));
+
 
 //create mail transporter
 const transporter = nodemailer.createTransport({
@@ -35,7 +36,7 @@ app.listen(PORT, () => {
     });
 
     //endpoint for form submission
-    app.post(__dirname + '/form-submission', (req, res) => {
+    app.post('/form-submission', (req, res) => {
         console.log('Form data in res.body');
 
         //validate the data
